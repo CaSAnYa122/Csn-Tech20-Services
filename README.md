@@ -1,6 +1,7 @@
 # Csn-Tech20 Services Website
 
-Welcome to the official website project for **Csn-Tech20 Services** – a tech-driven company offering innovative and efficient digital solutions.
+Welcome to the official website project for **Csn-Tech20 Services** – 
+a tech-driven company offering innovative and efficient digital solutions.
 
 ## 🧰 Technologies Used
 - **HTML5** – for structuring web pages
