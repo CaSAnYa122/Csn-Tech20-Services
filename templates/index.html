@@ -1,0 +1,134 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <main class="main-content">
+        <h2><i class="fas fa-map-marker-alt"></i>
+            <i>Ulipo Tupo</i></h2>
+        <div class="ofisi-layout">
+            <img src="{{ url_for('static',
+            filename='images/ofisi.jpg')}}" alt="Ofisi ya Csn-Tech20"
+            class="ofisi-main-img">
+            <div class="huduma-list">
+                <h2>Huduma Zetu:</h2>
+                <ul>
+                    <li><i class="fas fa-laptop"></i>
+                        <a href="/sales">Uuzaji wa Vifaa vya Teknolojia</a></li>
+                    <li><i class="fas fa-tools"></i>
+                        <a href="/repair">Matengenezo ya Vifaa vya Teknolojia
+                    </a></li>
+                    <li><i class="fas fa-code"></i>
+                        <a href="/developer">Ujenzi wa Software</a></li>
+                    <li><i class="fas fa-download"></i>
+                        <a href="/installation">Usanikishaji wa Software
+                    </a></li>
+                    <li><i class="fas fa-lightbulb"></i>
+                        <a href="/counselling">Ushauri wa Teknolojia</a></li>
+                    <li><i class="fas fa-chalkboard-teacher"></i>
+                        <a href="/training">Mafunzo ya Programu na Teknolojia
+                    </a></li>
+                </ul>
+                <a href="/contact" class="contact-link">
+                    Wasiliana Nasi
+                </a>
+            </div>
+        </div>
+        <div class="platform-description">
+            <h2><i class="fas fa-bullseye"></i>
+                <em>Maono Yetu</em></h2>
+            <p class="paragraphs">
+                <p><i class="fas fa-eye"></i>
+                    Csn-Tech20 Services ni Jukwaa la kiteknolojia
+                    lililojengwa kwa lengo la kuleta suluhisho bunifu 
+                    katika sekta ya teknolojia na nyanya mbali
+                    mbali zinazotumia Teknolojia kwa Ufanisi katika Utendaji 
+                    na Usimamizi wa shughuli na Mifumo mbali mbali ya Uzalishaji.  
+                    Tunatoa Huduma mbalimbali ikiwemo Uuzaji wa
+                    vifaa vya kisasa, Matengenezo ya Vifaa, Ujenzi na 
+                    usanikishaji wa Programu, pamoja na ushauri wa 
+                    kitaalamu.
+                </p>
+                <p>
+                    Maono yetu makubwa ni kuwa daraja la Uhakika kati ya 
+                    Teknolojia na Jamii, Tukileta maarifa, Ubunifu, HUduma
+                    Bora, na Mafunzo yanayowezesha watu, na Taasisi 
+                    kutumia Bunifu na Teknolojia kwa Tija.
+                </p>
+            </p>
+        </div>
+        <div class="emphasis">
+            <p>
+                <i><em>||: Tunajenga mustakabali wa kidigitali 
+                    unaojali ubora, ufanisi, na maendeleo ya pamoja 
+                    katika jamii :||</em></i>
+                </p>
+        </div> 
+        <div class="zigzag">
+            <div class="block left">
+                <img src="{{ url_for
+                ('static',filename='images/computer2.jpg')}}" 
+                alt="baadhi ya huduma1">
+                <p class="caption"></i>
+                    Tunauza Vifaa Bora Sana kwa 
+                    Gharama Rafiki, ili Kuwezesha Makundi yote 
+                    Kutumia Fursa ya Teknolojia Kama nyenzo Muhimu 
+                    ili Kutimiza Ndoto zao.Tutumie Vifaa na Ufundi wa 
+                    Teknolojia Kwa Vitendo zaidi
+                </p>        
+            </div>
+            <div class="block right">
+                <p class="caption1">Utatuzi wa Changamoto mbalimbali za Vifaa
+                    Usio na Athari Hasi kwa Mfumo Mama wa Kifaa Chako. 
+                    Tunakuepusha na Gharama za Kununua Kifaa kipya Pale 
+                    Kifaa chako Kinapopata changamoto ya Kimfumo au vifaa vya 
+                    Nje
+                </p>
+                <img src="{{ url_for
+                ('static',filename='images/computer5.jpg')}}" 
+                alt="baadhi ya huduma2">
+            </div>
+            <div class="block left">
+                <img src="{{ url_for
+                ('static',filename='images/computer1.jpg')}}" 
+                alt="baadhi ya huduma3">
+                <p class="caption">Ubunifu Wa Kisasa unaochochea
+                    Ubora na Tija katika Uzalishaji wa Software na 
+                    Programu. Ukaribu wetu na Jamii Umekuwa ni nguzo na 
+                    Msingi Muhimu katika kutambua Changamoto mbalimbali 
+                    na Jinsi ya Kutumia Teknolojia ili Kuzitatua Kwa 
+                    Kurahisha Kazi na Kuongeza Uzalishaji Katika 
+                    Shughuli za Msingi.
+                </p>
+            </div>
+            <div class="block right">
+                <p class="caption1">Tumekuwa Bora na wenye Kuimarika Katika 
+                    Uhandisi na Ujenzi wa Software na Programu tumizi.
+                    Kadri Siku zinavyokwenda tumefanikiwa Kuongeza Juhudi za 
+                    Kujumuisha Nguvu Kazi Yenye Uzoefu na Ufundi Wa Viwango 
+                    Vinavyohitajika Kwa Ajili ya Kufanya Kazi na Watu na Taasisi za nyanja zote.  
+                    Hapa kwetu Unapata Software Bora, Salama na 
+                    Zinazokizi mahitaji ya Mfumo wako Kutoka kwa 
+                    Wataaluma Waliobobea.
+                </p>
+                <img src="{{ url_for
+                ('static',filename='images/computer8.jpg')}}" 
+                alt="baadhi ya huduma4">                   
+            </div>
+            <div class="block left">
+                <img src="{{ url_for
+                ('static',filename='images/computer9.jpg')}}" 
+                alt="baadhi ya huduma5">
+                <p class="caption">Sehemu sahihi ya kujifunza, Kuendeleza 
+                    Bunifu na Kupata Ushauri kwa ajili ya maendeleo ya 
+                    Miradi MbaliMbali ya Kijamii na Kiuchumi.
+                </p>
+            </div>
+            <div class="call-action">
+                <p class="action-one"><i class="fas fa-clock"></i>
+                    Tunafanya Kazi 24/7.</p>
+                <p class="action-two"><i class="fas fa-microchip"></i>
+                    Biashara, Mradi au Uwekezaji Bila 
+                    Teknolojia?, Utasubiri sana!</p>
+            </div>
+        </div>
+    </main>
+{% endblock %}

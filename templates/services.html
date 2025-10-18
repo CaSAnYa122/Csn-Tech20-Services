@@ -1,0 +1,141 @@
+{% extends 'layout.html' %}
+{% block title %}
+    services -Csn-Tech20 Services
+{% endblock %}
+
+{% block services_link %}
+    <nav class="huduma-link">
+        <a href="/">Nyumbani</a>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <main class="all-services">
+        <h2>Huduma Bora zinazopatikana Csn-Tech20 services</h2>
+        <div class="sales">
+            <h3><i class="fas fa-laptop"></i>
+                Uuzaji wa Vifaa Vya Teknolojia</h3>
+            <p class="paragraph1">Tunauza Kompyuta, Laptops, 
+                na zana
+                zake(Accessories) kama vile chaja, RAMs, Disks, Adapters
+                Batteries, Stickers, na Vifaa vya Simu za Mkononi. <br> 
+                Kwa sasa Tunauza Vifaa Hivi Kwa Bei ya Rejareja, 
+                Toleo la Gharama za jumla Lipo Karibu Kutoka. <br>
+                Ewe Wanafunzi, Mtu binafsi au Taasisi,Karibu Csn-Tech20 
+                Services Tukupatie Kifaa Kilichobora Zaidi Kwa Gharama 
+                nafuu Zaidi <br>
+                <a href="/vifaa">Tazama Bidhaa Zetu</a>
+            </p>
+            <div class="uuzaji-images">
+                <img src="{{ url_for
+                ('static',filename='images/computer2.jpg')}}" 
+                alt="uuzaji">
+                <img src="{{ url_for
+                ('static',filename='images/uuzaji/uuzaji1.jpg')}}" 
+                alt="uuzaji1">
+                <img src="{{ url_for
+                ('static',filename='images/uuzaji/uuzaji2.jpg')}}" 
+                alt="uuzaji2">
+                <img src="{{ url_for
+                ('static',filename='images/uuzaji/uuzaji3.jpg')}}" 
+                alt="uuzaji3">
+                <img src="{{ url_for
+                ('static',filename='images/uuzaji/uuzaji4.jpg')}}" 
+                alt="uuzaji4">
+                <img src="{{ url_for
+                ('static',filename='images/uuzaji/uuzaji5.jpg')}}" 
+                alt="uuzaji5">
+            </div>
+        </div>
+
+        <div class="repair">
+            <h3><i class="fas fa-tools"></i>
+                Matengenezo Ya Vifaa Vya Teknolojia Vilivyoharibika!</h3>
+            <p class="paragraph2">Csn-Tech20 ni Wataalamu Mahiri 
+                Kutatua Changamoto Mbalimbali za Vifaa Vya Teknolojia 
+                Tunatoa huduma za Kisasa na Za Uhakika Kwa Vifaa kama 
+                Vile :, <br>(Hardware(Desktop, 
+                Motherboard, Cpu, GPU, Rams, Fans, Ports, Keyboard, Mouse, 
+                Charging & Power System,Camera, ICs etc) Software
+                (BIOS settings, Os, Troubleshooting, Driver diagnosis & 
+                Repair, System Management, System Clean-Ups etc )) <br>
+                Huduma zetu zinatolew Kwa haraka na Kwa Ufanisi na 
+                Wataalamu Wenye Uzoefu Mkubwa <br>
+                *Malipo Hufanyika tu Baada ya Kifaa Kurejeshwa Kikamilifu 
+                na Mteja Kuridhika* na Matokeo Ya HUduma <br>
+                Tunatoa Ushauri Wa Bora Kwa Mteja Kuhusu 
+                Kifaa chake ili aendelee Kufurahia Matumizi bila Usumbufu
+                 <br>
+                **USIKITUPE!, KILETE Csn-Tech20 TUKIFUFUE!** <br>
+                <a href="/repairs">Tazama Huduma Zetu za Matengenezo Ya 
+                Vifaa</a>
+            </p>
+            <div class="repair-images">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair1.jpg')}}" 
+                alt="repair1">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair2.jpg')}}" 
+                alt="repair2">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair3.jpg')}}" 
+                alt="repair3">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair4.jpg')}}" 
+                alt="repair4">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair5.jpg')}}" 
+                alt="repair5">
+                <img src="{{ url_for
+                ('static',filename='images/repair/repair6.jpg')}}" 
+                alt="repair6">
+            </div>
+        </div>
+
+        <div class="development">
+            <h3><i class="fas fa-code"></i>
+                Ujenzi Wa Software Csn-Tech20</h3>
+            <p class="paragraph3">TunaToa Huduma hii Kupitia Kitengo cha 
+                *Uhandisi na Ujenzi Wa Programu Tumizi(Software 
+                development Department)*. Tunatengeneza Programu Kwa ajili 
+                ya <br>*Apps za Simu(Android), Websites, Prpgramu za 
+                Kompyuta na Programu Maalumu Kulingana na Mahitaji ya 
+                Mteja Kama  vile: <br>Software za Kusimamia Biashara <br> 
+                Software ya Kuratibu Shughuli za kampuni <br>Software za 
+                Kutunza na Kutoa Taarifa za Wateja <br> Database za 
+                Kuendesha Mifumo ya Taarifa. <br> 
+                Tunatengeneza Software kwa Ubora wa Hali ya Juu, 
+                tukifanya *Majaribio ya Kutosha* na  Kutoa toleo la 
+                Majaribio (Trial Version)* Kwa mteja kabla ya 
+                Makabidhiano Rasmi. Haki ya Umiliki na Matumizi 
+                ya Programu Huhamishwa Kwa Mteja Baada ya Kuridhika <br>
+                **Kazi Zetu Hufanyika kwa Kuzingatia *Mkataba Rasmi* unao  
+                sainiwa Kati ya mteja na Csn-Tech20 <br><br>
+                **Csn-Tech20 Tunaamini Kuwa Utatuzi 
+                unaofuata Mantiki ndio Msingi Imara wa Mabadiliko Makubwa
+                Katika Sekta Ya Teknolojia!** <br> 
+                <a href="/softwares">Tazama Ujenzi wa Software</a>
+            </p>
+            <div class="development-images">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code.jpg')}}" 
+                alt="ujenzi">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code1.png')}}" 
+                alt="ujenzi1">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code2.png')}}" 
+                alt="ujenzi2">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code3.png')}}" 
+                alt="ujenzi3">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code4.png')}}" 
+                alt="ujenzi4">
+                <img src="{{ url_for
+                ('static',filename='images/ujenzi/code5.png')}}" 
+                alt="ujenzi5">
+            </div>
+        </div>
+    </main>
+{% endblock %}

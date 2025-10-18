@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sw">
+    <head>
+        <meta charset="UTF-8">
+        <title>Csn-Tech20 Services</title>
+
+        <!--Link kwa ajili ya Kupamba na CSS-->
+        <link rel="stylesheet" href="{{ url_for('static',
+        filename='css/style.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',
+        filename='fontawesome/css/all.min.css')}}">
+    </head>
+
+    <body>
+        <header>
+            <img src="{{ url_for
+            ('static', filename='images/logo.jpg')}}"
+            alt="Logo ya Csn-Tech20">
+            <h1>Karibu Csn-Tech20 Services</h1>
+            {% block services_link %}
+            <nav class="huduma-link">
+                <a href="/services">Huduma</a>
+            </nav>
+            {% endblock %}
+            <div class="profile-icon">
+                <a href="wasifu.html" 
+                title="Wasifu Wetu">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" 
+                placeholder="Tafuta..."/>
+                <button onclick="searchFunction()"
+                class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="menu-container">
+                <button class="menu-toggle" 
+                onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="menu-links" id="menu">
+                    <h3 class="menu-title">Menu</h3>
+                    <a href="#huduma"><i class="fas fa-tools">
+                    </i>Huduma</a>
+                    <a href="#wasifu"><i class="fas fa-user">
+                    </i>Wasifu</a>
+                    <a href="#mawasiliano"><i class="fas fa-phone">
+                    </i>Mawasiliano</a>
+                    <a href="#mrejesho"><i class="fas fa-comments">
+                    </i>Mrejesho</a>
+                    <a href="#ondoka"><i class="fas fa-sign-out-alt">
+                    </i>Ondoka</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a href="/about"><i class="fas fa-user-circle"></i>
+                    ||About Us||</a>
+                <a href="/contact"><i class="fas fa-phone-alt"></i>
+                    ||Contact Us||</a>
+                <a href="/faqs"><i class="fas fa-question-circle"></i>
+                    ||FAQs||</a>
+                <a href="settings"><i class="fas fa-gear"></i>
+                    ||Settings||</a>
+            </div>
+            <div class="footer-branding">
+                <div class="contact-row">
+                    <div class="email-contact">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:
+                            csntech20@gmail.com">
+                            csntech20@gmail.com
+                        </a> 
+                    </div>
+                    <div class="phone-contact">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel: +255754022170">+255754022170</a>
+                        <a href="tel: +255611163637">+255611163637</a>
+                        <a href="tel: +255685186676">+255685186676</a>
+                        <a href="sms: +255766243671">Tuma SMS</a>
+                    </div>
+                </div>
+                <img src="{{ url_for
+                ('static', filename='images/logo.jpg')}}"
+                alt="Logo ya Csn-Tech20" class="footer-logo">
+                <h3>Karibu Csn-Tech20 Services</h3>
+            </div>
+            <div class="social-icons">
+                <a href="https://wa.me/+255611163637"
+                target="_blank"><i class="fab fa-whatsapp">
+                </i></a>
+                <a href="https://www.tiktok.com/@Csn-Tech20"
+                target="_blank"><i class="fab fa-tiktok">
+                </i></a>
+                <a href="https://www.instagram.com/Csn_Tech20"
+                target="_blank"><i class="fab fa-instagram">
+                </i></a>
+                <a href="https://www.github.com/CaSAnYa122"
+                target="_blank"><i class="fab fa-github">
+                </i></a>
+            </div>
+            <div class="copyright">
+                @2025 Csn-Tech20 Services
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        //Function ya Toggle Menu ya juu kabisa
+        function toggleMenu()
+        {
+            const menu = document.getElementById("menu");
+            menu.style.display = menu.style.display==="flex"?
+            "none": "flex";
+        }
+
+        //Function ya kusearch Chochote
+        function searchFunction()
+        {
+            const query = document.getElementById
+            ("searchInput").value;
+            if (query.trim()!=="") 
+            {
+                alert("Unatafuta: "+ query)
+            }
+            else 
+            {
+                alert("Tafadhali Andika Kitu Kwanza.")
+            }
+        }
+    </script>
+</html>

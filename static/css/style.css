@@ -1,0 +1,595 @@
+/*Muonekano wa jumla wa body*/
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d1b2a;
+    color: white;
+    text-align: center;
+}
+
+
+/*Header layout*/
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 40px auto;
+    position: relative;
+    border-bottom: 2px solid #ffcc00;
+    padding-top: 10px;
+}
+.huduma-link
+{
+    margin-bottom: 20px;
+}
+.profile-icon
+{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.profile-icon i 
+{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.profile-icon i:hover 
+{
+    transform: scale(1.1);
+    color: #e94560;
+}
+.search-container
+{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 150px;
+    gap: 10px;
+    align-items: center;
+}
+.search-container input
+{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.search-container i 
+{
+    margin-left: 0;
+    color: white;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.search-button
+{
+    background-color: #e94560;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-container
+{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    gap: 10px;
+    align-items: center;
+}
+.menu-toggle
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu-links
+{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    gap: 12px;
+    right: 20px;
+    background-color: #ffcc00;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 999;
+}
+.menu-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+    text-align: center;
+}
+.menu-links a
+{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+.menu-links a:hover
+{
+    color: #e94560;
+}
+.menu-links i
+{
+    margin-right: 8px;
+}
+
+/*Logo styling*/
+header img
+{
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/*Title Styling*/
+header h1 
+{
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*Navigation Styling*/
+nav
+{
+    margin-top: 30px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover 
+{
+    background-color: #ffcc00;
+    color: #0d1b2a;
+}
+
+/*Css kwa ajili ya picha ya ofisi*/
+.ofisi-layout
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+.main-content
+{
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+.main-content h2
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+.ofisi-main-img
+{
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.huduma-list
+{
+    max-width: 400px;
+    color: white;
+}
+.huduma-list h2
+{
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+.huduma-list ul
+{
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 1.8;
+}
+.huduma-list ul a
+{
+    color: white;
+}
+.huduma-list ul i
+{
+    color: #00bfff;
+    margin-right: 8px;
+}
+.huduma-list ul a:hover
+{
+    color: #e94560;
+}
+
+/*Contact style*/
+.contact-link
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.contact-link:hover
+{
+    background-color: #fff176;
+    color: #0d1b2a;
+}
+/*Style kwa ajili ya paragaraph*/
+.paragraphs
+{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.platform-description h2
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+.fa-eye
+{
+    color: #ffcc00;
+    margin-right: 8px;
+}
+.emphasis
+{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffcc00! important;
+}
+
+/*Style ya picha zilizokwenye list
+.image-container
+{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.image-container img
+{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+*/
+.zigzag
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+.block
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.block.left
+{
+    flex-direction: row;
+}
+/*.block.right
+{
+    flex-direction: row-reverse;
+}*/
+.block img 
+{
+    width: 300;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+.caption 
+{
+    max-width: 400px;
+    font-size: 45;
+    line-height: 1.7;
+    color: #e4dcdc;
+    font-style: italic;
+}
+.caption1 
+{
+    max-width: 400px;
+    font-size: 45;
+    line-height: 1.7;
+    color: #ffcc00;
+    font-style: bold;
+}
+.call-action
+{
+    margin-top: 20px;
+    align-items: center;
+}
+.action-one
+{
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: larger;
+}
+.fa-clock
+{
+    color: whitesmoke;
+    margin-right: 8px;
+}
+.action-two
+{
+    color: #ffffff;
+    font-style: italic;
+    font-size: medium;
+}
+.fa-microchip
+{
+    color: #ffcc00;
+    font-weight: normal;
+    margin-right: 8px;
+}
+/*Style ya footer kwa ufupi*/
+.site-footer
+{
+    background-color: #0d1b2a;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #ffcc00;
+}
+.footer-links
+{
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+.footer-links a 
+{
+    margin: 0 15px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-links a:hover 
+{
+    text-decoration: underline;
+}
+.footer-branding
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+.contact-row
+{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #e94560;
+    color: white;
+}
+.email-contact, 
+.phone-contact
+{
+    padding: 0 10px;
+}
+.email-contact,
+.phone-contact i 
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+.email-contact,
+.phone-contact a 
+{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.email-contact a:hover,
+.phone-contact a:hover
+{
+    color: #ffcc00;
+}
+.email-contact
+{
+    text-align: center;
+    left: 20;
+}
+.phone-contact
+{
+    text-align: center;
+}
+/*Kuwa responsive kwa simu*/
+@media screen and 
+(max-width:600px) 
+{
+    .contact-row
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .email-contact,
+    .phone-contact
+    {
+        width: 100%;
+    }
+}
+.footer-logo
+{
+    width: 80px;
+    height: auto;
+}
+.footer-branding h3
+{
+    font-size: 22px;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+}
+.social-icons a 
+{
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffcc00;
+    transition: transform 0.3s ease;
+}
+.social-icons a:hover 
+{
+    transform: scale(1.2);
+    color: #fff176;
+}
+.copyright 
+{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+
+/*Service page styling*/
+.all-services
+{
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+.all-services h2
+{
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+.sales,
+.repair,
+.development
+{
+    margin: auto;
+    padding: 20px;
+}
+.sales h3,
+.repair h3,
+.development h3
+{
+    color: #e94560;
+    margin-bottom: 10px;
+}
+.paragraph1,
+.paragraph2,
+.paragraph3
+{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.paragraph1 a,
+.paragraph2 a,
+.paragraph3 a
+{
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+.paragraph1 a:hover,
+.paragraph2 a:hover,
+.paragraph3 a:hover 
+{
+    color: blue;
+}
+.uuzaji-images,
+.repair-images,
+.development-images
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+    margin-top: 20px;
+}
+.uuzaji-images img,
+.repair-images img,
+.development-images img
+{
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0.0.0.0.1);
+    transition: transform 0.3s ease;
+}
+.uuzaji-images img,
+.repair-images img,
+.development-images img
+{
+    transform: scale(1.05);
+}
+
