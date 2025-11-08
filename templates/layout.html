@@ -11,8 +11,8 @@
         filename='fontawesome/css/all.min.css')}}">
     </head>
 
-    <body>
-        <header>
+    <body class="{% block body_class %}{% endblock %}">
+        <header class="site-header">
             <img src="{{ url_for
             ('static', filename='images/logo.jpg')}}"
             alt="Logo ya Csn-Tech20">
@@ -43,11 +43,11 @@
                 </button>
                 <nav class="menu-links" id="menu">
                     <h3 class="menu-title">Menu</h3>
-                    <a href="#huduma"><i class="fas fa-tools">
+                    <a href="/services"><i class="fas fa-tools">
                     </i>Huduma</a>
                     <a href="#wasifu"><i class="fas fa-user">
                     </i>Wasifu</a>
-                    <a href="#mawasiliano"><i class="fas fa-phone">
+                    <a href="/contacts"><i class="fas fa-phone">
                     </i>Mawasiliano</a>
                     <a href="#mrejesho"><i class="fas fa-comments">
                     </i>Mrejesho</a>

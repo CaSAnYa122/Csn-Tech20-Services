@@ -11,17 +11,15 @@ body
 
 
 /*Header layout*/
-header
+.site-header
 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 20px 0px 20px;
     margin: 40px auto;
     position: relative;
-    border-bottom: 2px solid #ffcc00;
-    padding-top: 10px;
 }
 .huduma-link
 {
@@ -198,6 +196,8 @@ nav a:hover
     margin-top: 40px;
     padding: 20px;
     text-align: center;
+    background-color: #1a237e;
+    border-top: 2px solid #ffcc00;
 }
 .main-content h2
 {
@@ -523,6 +523,8 @@ nav a:hover
     margin-top: 40px;
     padding: 20px;
     text-align: center;
+    background-color: rgb(167, 11, 146);
+    border-top: 2px solid #ffcc00;
 }
 .all-services h2
 {
@@ -534,41 +536,59 @@ nav a:hover
 }
 .sales,
 .repair,
-.development
+.development,
+.installation,
+.consultancy,
+.training
 {
     margin: auto;
     padding: 20px;
 }
 .sales h3,
 .repair h3,
-.development h3
+.development h3,
+.installation h3,
+.consultancy h3,
+.training h3
 {
     color: #e94560;
     margin-bottom: 10px;
 }
 .paragraph1,
 .paragraph2,
-.paragraph3
+.paragraph3,
+.paragraph4,
+.paragraph5,
+.paragraph6
 {
     line-height: 1.6;
     margin-bottom: 10px;
 }
 .paragraph1 a,
 .paragraph2 a,
-.paragraph3 a
+.paragraph3 a,
+.paragraph4 a,
+.paragraph5 a,
+.paragraph6 a
 {
     color: #ffcc00;
     margin-bottom: 20px;
 }
 .paragraph1 a:hover,
 .paragraph2 a:hover,
-.paragraph3 a:hover 
+.paragraph3 a:hover,
+.paragraph4 a:hover,
+.paragraph5 a:hover,
+.paragraph6 a:hover 
 {
-    color: blue;
+    color: rgb(30, 165, 26);
 }
 .uuzaji-images,
 .repair-images,
-.development-images
+.development-images,
+.installation-images,
+.consultancy-images,
+.training-images
 {
     display: flex;
     flex-wrap: wrap;
@@ -578,7 +598,10 @@ nav a:hover
 }
 .uuzaji-images img,
 .repair-images img,
-.development-images img
+.development-images img,
+.installation-images img,
+.consultancy-images img,
+.training-images img
 {
     width: 150px;
     height: auto;
@@ -588,8 +611,33 @@ nav a:hover
 }
 .uuzaji-images img,
 .repair-images img,
-.development-images img
+.development-images img,
+.installation-images img,
+.consultancy-images img,
+.training-images img
 {
     transform: scale(1.05);
 }
 
+/* Page ya Contacts*/
+.contacts-page footer
+{
+    background-color: #0b7fdf;
+}
+.contacts h2
+{
+    max-width: 600px;
+    border: 2px solid #e94560;
+    color: #ffcc00;
+    margin: 10px;
+    padding: 5px 5px;
+    background-color: #1a237e;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+
+}
+.contacts i
+{
+    color: #ffcc00;
+}
